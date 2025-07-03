@@ -1,6 +1,4 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -21,7 +19,17 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;body {
+    width: 100%;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
     padding: 40px;
 }
 
@@ -50,6 +58,7 @@ header {
     width: 100%;
     padding: 50px;
 }
+
 .overlay ul {
     margin-bottom: 200px;
     width: 100%;
@@ -82,10 +91,11 @@ nav input {
     display: none;
 }
 
-nav input:checked ~ .overlay {
+nav input:checked~.overlay {
     display: flex;
 }
-#checkbox:checked + label {
+
+#checkbox:checked+label {
     display: none;
 }
 
@@ -218,6 +228,11 @@ h3 {
     align-items: center;
 }
 
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
 .second-section-info,
 .third-section-info {
     display: flex;
@@ -249,13 +264,13 @@ h3 {
     margin-top: 50px;
 }
 
-#simple:checked ~ .features-content .simple,
-#speedy:checked ~ .features-content .speedy,
-#easy:checked ~ .features-content .easy {
+#simple:checked~.features-content .simple,
+#speedy:checked~.features-content .speedy,
+#easy:checked~.features-content .easy {
     display: flex;
 }
 
-input:checked + label h3 {
+input:checked+label h3 {
     font-weight: 700;
 }
 
@@ -329,7 +344,7 @@ ul {
     display: none;
 }
 
-.questions input:checked ~ p {
+.questions input:checked~p {
     display: block;
     text-align: start;
     width: 90%;
@@ -479,7 +494,7 @@ a {
         letter-spacing: 0.6px;
     }
 
-    nav input:checked ~ .overlay {
+    nav input:checked~.overlay {
         display: none;
     }
 
