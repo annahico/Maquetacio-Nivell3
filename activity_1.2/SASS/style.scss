@@ -553,3 +553,12 @@ details[open] .arrow-icon img {
 #social-icons img {
   cursor: pointer;
 }
+
+// Footer general styles
+footer a {
+  @include anchor-style(white, 0.75em);
+}
+
+footer #circle {
+  @include circle-style($color-button-blue);
+}

@@ -524,4 +524,25 @@ details[open] .arrow-icon img {
   cursor: pointer;
 }
 
+footer a {
+  color: white;
+  font-size: 0.75em;
+  text-decoration: none;
+  font-weight: 530;
+  padding: 0 25px;
+  transition: 0.4s;
+  letter-spacing: 0.1em;
+}
+
+footer #circle {
+  background-color: rgb(84, 101, 223);
+  width: 2em;
+  height: 2em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
