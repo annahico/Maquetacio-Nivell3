@@ -1,3 +1,5 @@
+// Variables
+
 $color-blue: #5267df;
 $color-red: #fa5959;
 $color-grey: #f7f7f7;
@@ -8,3 +10,11 @@ $color-muted: #9194a1;
 $font-main: 'Arial', sans-serif;
 $transition: 0.3s ease;
 $radius: 5px;
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
