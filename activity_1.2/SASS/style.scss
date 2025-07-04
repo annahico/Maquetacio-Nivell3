@@ -119,3 +119,18 @@ hr {
   margin-top: 0px;
 }
 
+// Buttons
+.button-blue {
+  @include button-style($color-button-blue, $color-button-blue, 1.2em 2em, white, 0em 1em 10px, 0px);
+  @include button-hover(white, $color-border-button-blue-hover, $color-button-blue);
+}
+
+#button-red {
+  @include button-style($color-button-red, $color-button-red, 1.2em 2.4em, white, default, 0px);
+  @include button-hover(white, $color-button-red-hover, $color-button-red-hover);
+}
+
+#button-grey {
+  @include button-style($color-button-grey, white, 1.2em 2.2em, $color-font-button-grey, 0px, 1px 5px 10px 1px $color-box-shadow);
+  @include button-hover(white, $color-button-grey-hover, $color-button-grey-hover);
+}

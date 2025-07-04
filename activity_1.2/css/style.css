@@ -49,4 +49,67 @@ hr {
   margin-top: 0px;
 }
 
+.button-blue {
+  background-color: rgb(84, 101, 223);
+  border-color: rgb(84, 101, 223);
+  padding: 1.2em 2em;
+  color: white;
+  margin: 0em 1em 10px;
+  box-shadow: 0px;
+  font-weight: bold;
+  border-style: solid;
+  font-size: calc(0.7em + 0.2vw);
+  border-radius: 5px;
+  cursor: url(./images/cursor.cur), auto;
+}
+.button-blue:hover {
+  background-color: white;
+  border-color: rgb(98, 108, 168);
+  color: rgb(84, 101, 223);
+  font-weight: bold;
+  border: 2px solid;
+}
+
+#button-red {
+  background-color: rgb(255, 82, 82);
+  border-color: rgb(255, 82, 82);
+  padding: 1.2em 2.4em;
+  color: white;
+  margin: default;
+  box-shadow: 0px;
+  font-weight: bold;
+  border-style: solid;
+  font-size: calc(0.7em + 0.2vw);
+  border-radius: 5px;
+  cursor: url(./images/cursor.cur), auto;
+}
+#button-red:hover {
+  background-color: white;
+  border-color: rgb(226, 104, 101);
+  color: rgb(226, 104, 101);
+  font-weight: bold;
+  border: 2px solid;
+}
+
+#button-grey {
+  background-color: rgb(247, 247, 247);
+  border-color: white;
+  padding: 1.2em 2.2em;
+  color: rgb(88, 88, 95);
+  margin: 0px;
+  box-shadow: 1px 5px 10px 1px rgb(229, 231, 243);
+  font-weight: bold;
+  border-style: solid;
+  font-size: calc(0.7em + 0.2vw);
+  border-radius: 5px;
+  cursor: url(./images/cursor.cur), auto;
+}
+#button-grey:hover {
+  background-color: white;
+  border-color: rgb(93, 93, 102);
+  color: rgb(93, 93, 102);
+  font-weight: bold;
+  border: 2px solid;
+}
+
 /*# sourceMappingURL=style.css.map */
