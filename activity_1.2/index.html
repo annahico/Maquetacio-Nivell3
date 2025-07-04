@@ -1,195 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enllaços d'estils i icones -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Bookmark</title>
-</head>
+  </head>
 
-<body>
+  <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header__logo">
-            <img src="../img/Imagenes/logo-bookmark.svg" alt="Bookmark Logo" />
+ <!-- Capçalera -->
+<header>
+  <div id="logo">
+    <img src="../img/Imagenes/logo-bookmark.svg" />
+  </div>
+
+  <div id="logo-mobile-nav">
+    <div id="circle">
+      <i class="fa-solid fa-bookmark"></i>
+    </div>
+    <p id="logo-name">BOOKMARK</p>
+  </div>
+
+  <input type="checkbox" id="check" />
+  <label for="check" class="mostrar-menu">
+    <img src="../img/Imagenes/icon-hamburger.svg" />
+  </label>
+
+  <nav>
+    <a href="#">FEATURES</a>
+    <a href="#">PRICING</a>
+    <a id="contact" href="#">CONTACT</a>
+    <button id="button-red">LOGIN</button>
+    <label for="check" class="esconder-menu">
+      <img src="../img/Imagenes/icon-close.svg" />
+    </label>
+  </nav>
+</header>
+
+<main>
+  <!-- Secció portada -->
+  <section id="hero-section">
+    <div id="hero-left">
+      <h1>A Simple Bookmark Manager</h1>
+      <div id="hero-description">
+        <p>A clean and simple interface to organize your favourite websites...</p>
+      </div>
+      <button class="button-blue">Get it on Chrome</button>
+      <button id="button-grey">Get it on Firefox</button>
+    </div>
+
+    <div id="hero-right">
+      <img id="hero-illustration" src="../img/Imagenes/illustration-hero.svg" />
+    </div>
+  </section>
+
+  <!-- Secció característiques -->
+  <section id="features">
+    <h2>Features</h2>
+    <div id="features-description">
+      <p>Our aim is to make it quick and easy for you to access your...</p>
+    </div>
+
+    <div id="features-tabs">
+      <hr class="hr-features" />
+      <button class="button-features">Simple Bookmarking</button>
+      <hr class="hr-features" />
+      <button class="button-features">Speedy Searching</button>
+      <hr class="hr-features" />
+      <button class="button-features">Easy Sharing</button>
+      <hr class="hr-features" />
+    </div>
+
+    <hr id="features-divider" />
+
+    <div id="features-content">
+      <div id="features-left">
+        <img src="../img/Imagenes/illustration-features-tab-1.svg" />
+      </div>
+
+      <div id="features-right">
+        <h2>Bookmark in one click</h2>
+        <p>Organize your bookmarks however you like...</p>
+        <button class="button-blue">More info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció extensions -->
+  <section id="extensions">
+    <h2>Download the extension</h2>
+    <div id="extensions-description">
+      <p>We've got more browsers in the pipeline...</p>
+    </div>
+
+    <div id="extensions-grid">
+      <div id="chrome-box">
+        <img src="../img/Imagenes/logo-chrome.svg" />
+        <h4>Add to Chrome</h4>
+        <p class="small-p">Minimum version 62</p>
+        <img class="dots" src="../img/Imagenes/bg-dots.svg" />
+        <button class="button-blue">Add & Install Extension</button>
+      </div>
+
+      <div id="firefox-box">
+        <img src="../img/Imagenes/logo-firefox.svg" />
+        <h4>Add to Chrome</h4>
+        <p class="small-p">Minimum version 62</p>
+        <img class="dots" src="../img/Imagenes/bg-dots.svg" />
+        <button class="button-blue">Add & Install Extension</button>
+      </div>
+
+      <div id="opera-box">
+        <img src="../img/Imagenes/logo-opera.svg" />
+        <h4>Add to Chrome</h4>
+        <p class="small-p">Minimum version 62</p>
+        <img class="dots" src="../img/Imagenes/bg-dots.svg" />
+        <button class="button-blue">Add & Install Extension</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secció preguntes freqüents -->
+  <section id="questions">
+    <div id="faq-description">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions...</p>
+    </div>
+
+    <div id="faq-list">
+      <details>
+        <summary>
+          What is Bookmark?<span class="arrow-icon"><img src="../img/Imagenes/icon-arrow.svg" /></span>
+        </summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </details>
+
+      <details>
+        <summary>
+          How can I request a new browser?<span class="arrow-icon"><img src="../img/Imagenes/icon-arrow.svg" /></span>
+        </summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </details>
+
+      <details>
+        <summary>
+          Is there a mobile app?<span class="arrow-icon"><img src="../img/Imagenes/icon-arrow.svg" /></span>
+        </summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </details>
+
+      <details>
+        <summary>
+          What about other Chromium browsers?<span class="arrow-icon"><img src="../img/Imagenes/icon-arrow.svg" /></span>
+        </summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </details>
+    </div>
+
+    <button class="button-blue">More Info</button>
+  </section>
+</main>
+
+<!-- Peu de pàgina -->
+<footer>
+  <!-- Subscriu-te al newsletter -->
+  <section id="newsletter">
+    <p>35,000 ALREADY JOINED</p>
+    <h2>Stay up-to-date with what we're doing</h2>
+    <div class="input-email">
+      <input type="email" />
+      <button id="button-red">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Navegació i xarxes socials -->
+  <section id="footer-content">
+    <div id="footer-left">
+      <div id="logo-mobile-nav">
+        <div id="circle">
+          <i class="fa-solid fa-bookmark"></i>
         </div>
+        <p id="logo-name">BOOKMARK</p>
+      </div>
+      <a href="#">FEATURES</a>
+      <a href="#">PRICING</a>
+      <a href="#">CONTACT</a>
+    </div>
 
-        <div class="header__mobile-nav">
-            <div class="header__circle">
-                <i class="fa-solid fa-bookmark"></i>
-                <!-- </div>
-            <p class="header__name">BOOKMARK</p>
-        </div> -->
-
-                <input type="checkbox" id="menu-toggle" />
-                <label for="menu-toggle" class="header__hamburger">
-                    <img src="../img/Imagenes/icon-hamburger.svg" alt="Menu" />
-                </label>
-
-                <nav class="header__nav">
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Contact</a>
-                    <button class="button button--red">Login</button>
-                    <label for="menu-toggle" class="header__close">
-                        <img src="../img/Imagenes/icon-close.svg" alt="Close menu" />
-                    </label>
-                </nav>
-    </header>
-
-    <main>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero__content">
-                <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
-                    sites load instantly. Try it for free.</p>
-                <div class="hero__buttons">
-                    <button class="button button--blue">Get it on Chrome</button>
-                    <button class="button button--grey">Get it on Firefox</button>
-                </div>
-            </div>
-            <div class="hero__image">
-                <img src="../img/Imagenes/illustration-hero.svg" alt="Hero Illustration" />
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features">
-            <h2>Features</h2>
-            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
-                between your devices so you can access them on the go.</p>
-
-            <div class="features__tabs">
-                <button class="features__tab">Simple Bookmarking</button>
-                <button class="features__tab">Speedy Searching</button>
-                <button class="features__tab">Easy Sharing</button>
-            </div>
-
-            <div class="features__content">
-                <div class="features__image">
-                    <img src="../img/Imagenes/illustration-features-tab-1.svg" alt="Feature 1" />
-                </div>
-                <div class="features__text">
-                    <h3>Bookmark in one click</h3>
-                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-                        control over how you manage your favourite sites.</p>
-                    <button class="button button--blue">More Info</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Extensions Section -->
-        <section class="extensions">
-            <h2>Download the extension</h2>
-            <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to
-                prioritize.</p>
-
-            <div class="extensions__grid">
-
-                <div class="extension-card extension-card--chrome">
-                    <img src="../img/Imagenes/logo-chrome.svg" alt="Chrome" />
-                    <h4>Add to Chrome</h4>
-                    <p>Minimum version 62</p>
-                    <img class="extension-card__dots" src="../img/Imagenes/bg-dots.svg" alt="dots" />
-                    <button class="button button--blue">Add & Install Extension</button>
-                </div>
-
-                <div class="extension-card extension-card--firefox">
-                    <img src="../img/Imagenes/logo-firefox.svg" alt="Firefox" />
-                    <h4>Add to Firefox</h4>
-                    <p>Minimum version 55</p>
-                    <img class="extension-card__dots" src="../img/Imagenes/bg-dots.svg" alt="dots" />
-                    <button class="button button--blue">Add & Install Extension</button>
-                </div>
-
-                <div class="extension-card extension-card--opera">
-                    <img src="../img/Imagenes/logo-opera.svg" alt="Opera" />
-                    <h4>Add to Opera</h4>
-                    <p>Minimum version 46</p>
-                    <img class="extension-card__dots" src="../img/Imagenes/bg-dots.svg" alt="dots" />
-                    <button class="button button--blue">Add & Install Extension</button>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <p>Here are some of our FAQs. If you have any other questions you'd like answered, please feel free to email
-                us.</p>
-
-            <div class="faq__questions">
-                <details>
-                    <summary>What is Bookmark? <span><img src="../img/Imagenes/icon-arrow.svg" alt="arrow" /></span>
-                    </summary>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit consequat sem sed
-                        commodo.</p>
-                </details>
-                <details>
-                    <summary>How can I request a new browser? <span><img src="../img/Imagenes/icon-arrow.svg"
-                                alt="arrow" /></span></summary>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit consequat sem sed
-                        commodo.</p>
-                </details>
-                <details>
-                    <summary>Is there a mobile app? <span><img src="../img/Imagenes/icon-arrow.svg"
-                                alt="arrow" /></span></summary>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit consequat sem sed
-                        commodo.</p>
-                </details>
-                <details>
-                    <summary>What about other Chromium browsers? <span><img src="../img/Imagenes/icon-arrow.svg"
-                                alt="arrow" /></span></summary>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit consequat sem sed
-                        commodo.</p>
-                </details>
-            </div>
-
-            <button class="button button--blue">More Info</button>
-        </section>
-
-    </main>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <p>35,000+ already joined</p>
-        <h2>Stay up-to-date with what we're doing</h2>
-        <form class="newsletter__form">
-            <input type="email" placeholder="Enter your email" />
-            <button class="button button--red">Contact Us</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__logo">
-            <div class="footer__circle">
-                <i class="fa-solid fa-bookmark"></i>
-
-                <nav class="footer__nav">
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Contact</a>
-                </nav>
-
-                <div class="logo">
-                    <img src="../img/Imagenes/logo-bookmark.svg" alt="Bookmark Logo" />
-                </div>
-                <div class="footer__social">
-                    <img src="../img/Imagenes/icon-facebook.svg" alt="Facebook" />
-                    <img src="../img/Imagenes/icon-twitter.svg" alt="Twitter" />
-                </div>
-    </footer>
-
-</body>
-
-</html>
+    <div id="social-icons">
+      <img src="../img/Imagenes/icon-facebook.svg" />
+      <img src="../img/Imagenes/icon-twitter.svg" />
+    </div>
+  </section>
+</footer>
