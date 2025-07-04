@@ -416,4 +416,54 @@ main {
   margin-top: 5em;
 }
 
+#questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.9em;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 8em;
+}
+
+#faq-description {
+  text-align: center;
+  width: 32em;
+  margin-bottom: 2em;
+}
+
+#faq-list {
+  width: 100%;
+  max-width: 700px;
+}
+
+#faq-list details summary {
+  color: rgb(29, 36, 64);
+  font-size: calc(0.9em + 0.2vw);
+  border-bottom: 1px solid grey;
+  padding: 1em 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: url(./images/cursor.cur), auto;
+  align-items: center;
+}
+
+#faq-list details summary:hover {
+  color: rgb(255, 82, 82);
+}
+
+.arrow-icon img {
+  transition: transform 0.3s ease;
+}
+
+details[open] .arrow-icon img {
+  transform: rotate(180deg);
+}
+
+.button-blue {
+  margin-top: 2em;
+}
+
 /*# sourceMappingURL=style.css.map */
