@@ -493,3 +493,63 @@ details[open] .arrow-icon img {
 .button-blue {
   margin-top: 2em;
 }
+
+// Newsletter section
+
+#newsletter {
+  background-color: #5267df;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+#newsletter h2,
+#newsletter p {
+  color: white;
+}
+
+.input-email {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.input-email input[type='email'] {
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  width: 250px;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 2em 25px;
+  background-color: rgba(40, 40, 65);
+  color: white;
+}
+
+#footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#footer-left #logo-mobile-nav {
+  display: flex;
+  align-items: center;
+}
+
+#social-icons {
+  display: flex;
+  gap: 1em;
+}
+
+#social-icons img {
+  cursor: pointer;
+}
