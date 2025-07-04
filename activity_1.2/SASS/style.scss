@@ -184,3 +184,87 @@ nav a:hover,
   display: none;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(40, 40, 65, 0.93);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+
+  #contact {
+    padding-right: 25px;
+  }
+
+  nav a {
+    display: block;
+    padding: 20px;
+    color: white;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 58px;
+    right: 33px;
+  }
+
+  #check:checked ~ nav {
+    right: 0;
+  }
+
+  #check:checked ~ .mostrar-menu {
+    display: none;
+  }
+
+  // Cambios para secciones hero en vez de portada
+  #hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #hero-description {
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero-right {
+    margin-bottom: 2em;
+  }
+
+  #features-description {
+    display: flex;
+    justify-content: center;
+  }
+
+  #features-tabs {
+    flex-direction: column;
+  }
+
+  #features-tabs .button-blue {
+    display: none;
+  }
+
+  .hr-features {
+    display: block;
+  }
+
+  #extensions-grid {
+    flex-direction: column;
+  }
+}
