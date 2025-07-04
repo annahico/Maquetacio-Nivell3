@@ -321,3 +321,124 @@ main {
   z-index: -1;
 }
 
+// Section features
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.9em;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10em;
+}
+
+#features-description {
+  text-align: center;
+  width: 32em;
+  margin-bottom: 4em;
+}
+
+#features-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.hr-features {
+  display: none;
+}
+
+.button-features {
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  color: rgb(115, 116, 120);
+  font-size: calc(0.8em + 0.2vw);
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-bottom: 1.4em;
+  border-bottom-width: 0.25em;
+  width: 13em;
+  cursor: pointer;
+}
+
+.button-features:hover {
+  border-color: white white rgb(255, 82, 82) white;
+}
+
+#features-divider {
+  margin-bottom: 5em;
+  width: 100%;
+  background-color: rgb(193, 192, 192);
+  height: 1px;
+  border: none;
+}
+
+#features-content {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  max-width: 900px;
+}
+
+#features-left {
+  width: 50%;
+}
+
+#features-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#features-right h2 {
+  margin-bottom: 1em;
+}
+
+#features-right p {
+  margin-bottom: 1.5em;
+}
+
+// Section extensions
+
+#extensions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.9em;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10em;
+}
+
+#extensions-description {
+  text-align: center;
+  width: 32em;
+  margin-bottom: 2em;
+}
+
+#extensions-grid {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#chrome-box,
+#firefox-box,
+#opera-box {
+  @include extension-card(0em);
+  margin-top: 0;
+}
+
+#firefox-box {
+  margin-top: 2.5em;
+}
+
+#opera-box {
+  margin-top: 5em;
+}
+
