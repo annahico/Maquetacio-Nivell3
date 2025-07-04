@@ -1,18 +1,121 @@
-//Variables colores
+// Variables
 $cursor: url(./images/cursor.cur), auto;
-$color-titulos:rgb(29 36 64);
-$color-p:rgb(150 151 155);
-$color-btn-rojo:rgb(255, 82, 82);
-$color-btn-rojo-hover:rgb(226 104 101);
-$color-btn-azul:rgb(84 101 223);
-$color-border-btn-azul-hover:rgb(98 108 168);
-$color-btn-grey:rgb(247 247 247);
-$color-font-btn-grey:rgb(88 88 95);
-$color-box-shadow:rgb(229 231 243);
-$color-btn-grey-hover:rgb(93 93 102);
-$color-figura-after:rgb(82, 103, 223);
+$color-titles: rgb(29, 36, 64);
+$color-paragraph: rgb(150, 151, 155);
+$color-button-red: rgb(255, 82, 82);
+$color-button-red-hover: rgb(226, 104, 101);
+$color-button-blue: rgb(84, 101, 223);
+$color-border-button-blue-hover: rgb(98, 108, 168);
+$color-button-grey: rgb(247, 247, 247);
+$color-font-button-grey: rgb(88, 88, 95);
+$color-box-shadow: rgb(229, 231, 243);
+$color-button-grey-hover: rgb(93, 93, 102);
+$color-after-shape: rgb(82, 103, 223);
+$main-font: Arial, Helvetica, sans-serif;
 
-//Variables fuentes
-$fuente-principal:  Arial, Helvetica, sans-serif;
+// Mixins
+@mixin font-style($color, $font-size, $margin-b) {
+  color: $color;
+  font-size: $font-size;
+  margin-bottom: $margin-b;
+  line-height: 1.5em;
+}
 
+@mixin button-style($bg-color, $b-color, $padding, $color, $margin, $box-shadow) {
+  background-color: $bg-color;
+  border-color: $b-color;
+  padding: $padding;
+  color: $color;
+  margin: $margin;
+  box-shadow: $box-shadow;
+  font-weight: bold;
+  border-style: solid;
+  font-size: calc(0.7em + 0.2vw);
+  border-radius: 5px;
+  cursor: $cursor;
+}
+
+@mixin button-hover($bg-color, $b-color, $color) {
+  &:hover {
+    background-color: $bg-color;
+    border-color: $b-color;
+    color: $color;
+    font-weight: bold;
+    border: 2px solid;
+  }
+}
+
+@mixin anchor-style($color, $font-size) {
+  color: $color;
+  font-size: $font-size;
+  text-decoration: none;
+  font-weight: 530;
+  padding: 0 25px;
+  transition: 0.4s;
+  letter-spacing: 0.1em;
+}
+
+@mixin circle-style($bg-color) {
+  background-color: $bg-color;
+  width: 2em;
+  height: 2em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+@mixin extension-card($margin-top) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 30px;
+  margin-top: $margin-top;
+  border: solid white;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px $color-box-shadow;
+}
+
+// General layout
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 1em;
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include font-style(#1d2440, calc(1.6em + 1.4vw), 15px);
+}
+
+h2 {
+  @include font-style(#1d2440, 2em, 0.1em);
+}
+
+h3 {
+  @include font-style(#1d2440, 1.17em, 0px);
+}
+
+p {
+  @include font-style($color-paragraph, calc(0.9em + 0.2vw), 0px);
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  width: 100%;
+  background-color: rgb(193, 192, 192);
+  height: 1px;
+  border: none;
+  margin-top: 0px;
+}
 
