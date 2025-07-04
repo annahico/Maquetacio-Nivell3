@@ -134,3 +134,53 @@ hr {
   @include button-style($color-button-grey, white, 1.2em 2.2em, $color-font-button-grey, 0px, 1px 5px 10px 1px $color-box-shadow);
   @include button-hover(white, $color-button-grey-hover, $color-button-grey-hover);
 }
+
+// Header
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.3em;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+#logo {
+  align-content: center;
+}
+
+a {
+  @include anchor-style(#353541, 0.86em);
+}
+
+#circle {
+  @include circle-style(white);
+}
+
+#logo-name {
+  color: white;
+}
+
+#logo-mobile-nav {
+  align-items: center;
+  display: none;
+}
+
+.mostrar-menu {
+  order: 1;
+  display: none;
+}
+
+nav a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: rgb(226, 104, 101);
+}
+
+#check {
+  display: none;
+}
+

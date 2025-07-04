@@ -112,4 +112,64 @@ hr {
   border: 2px solid;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.3em;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+#logo {
+  align-content: center;
+}
+
+a {
+  color: #353541;
+  font-size: 0.86em;
+  text-decoration: none;
+  font-weight: 530;
+  padding: 0 25px;
+  transition: 0.4s;
+  letter-spacing: 0.1em;
+}
+
+#circle {
+  background-color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+#logo-name {
+  color: white;
+}
+
+#logo-mobile-nav {
+  align-items: center;
+  display: none;
+}
+
+.mostrar-menu {
+  order: 1;
+  display: none;
+}
+
+nav a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: rgb(226, 104, 101);
+}
+
+#check {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
