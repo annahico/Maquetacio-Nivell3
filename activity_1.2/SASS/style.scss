@@ -268,3 +268,56 @@ nav a:hover,
     flex-direction: column;
   }
 }
+
+// Main
+main {
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+// Section hero (antes portada)
+#hero-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+  margin-top: 3.5em;
+}
+
+#hero-left {
+  width: 100%;
+}
+
+#hero-left p {
+  width: 85%;
+}
+
+#hero-description {
+  margin-bottom: 30px;
+}
+
+#hero-right {
+  margin-top: 3em;
+  width: 100%;
+  position: relative;
+}
+
+#hero-illustration {
+  max-width: 100%;
+}
+
+#hero-right::after {
+  content: '';
+  position: absolute;
+  width: calc(16em + 17vw);
+  height: calc(11em + 10vw);
+  background-color: #5267df;
+  bottom: -10px;
+  right: -90px;
+  border-top-left-radius: 160px;
+  border-bottom-left-radius: 160px;
+  border-top-right-radius: 100px;
+  z-index: -1;
+}
+
