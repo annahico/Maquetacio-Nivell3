@@ -1,12 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <script src="./js/script.js"></script>
+    <header>
+        <a href="#">
+            <img src="../img/Imagenes/logo-bookmark.svg" alt="Bookmark logo" />
+        </a>
+        <nav>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"><img src="../img/Imagenes/icon-hamburger.svg" alt="Menú desplegable" /></label>
+            <div class="overlay">
+                <div class="overlay-header">
+                    <div class="footer-logo">
+                        <div class="recorte">
+                            <img src="../img/Imagenes/logo-bookmark.svg" alt="Logo de Bookmark" />
+                        </div>
+                        <a href="#">BOOKMARK</a>
+                    </div>
+                    <label for="checkbox" class="close-icon">
+                        <img src="../img/Imagenes/icon-close.svg" alt="Cerrar menú" />
+                    </label>
+                </div>
+                <ul>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </div>
+            <ul class="menu-desktop">
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="first-info">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>
+                    A clean and simple interface to organize your favourite
+                    websites. Open a new browser tab and see your sites load
+                    instantly. Try it for free.
+                </p>
+                <div class="first-btns">
+                    <button>Get it on Chrome</button>
+                    <button class="grey-btn">Get it on Firefox</button>
+                </div>
+            </div>
+            <div class="first-img">
+                <img src="../img/Imagenes/illustration-hero.svg" alt="" />
+                <div class="blue-bg firstblue-bg"></div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="second-section-info">
+                <h2>Features</h2>
+                <p>
+                    Our aim is to make it quick and easy for you to access
+                    your favourite websites. Your bookmarks sync between
+                    your devices so you can access them on the go.
+                </p>
+                <div class="features">
+                    <input type="radio" id="simple" name="simple" checked />
+                    <label for="simple">
+                        <h3>Simple Bookmarking</h3>
+                    </label>
+                    <input type="radio" id="speedy" name="simple" />
+                    <label for="speedy">
+                        <h3>Speedy Searching</h3>
+                    </label>
+                    <input type="radio" id="easy" name="simple" />
+                    <label for="easy">
+                        <h3>Easy Sharing</h3>
+                    </label>
+                    <div class="features-content">
+                        <article class="article simple">
+                            <div class="article-img">
+                                <img src="../img/Imagenes/illustration-features-tab-1.svg" alt="" />
+                                <div class="blue-bg secondblue-bg"></div>
+                            </div>
+                            <div class="article-info">
+                                <h3>Bookmark in one click</h3>
+                                <p>
+                                    Organize your bookmarks however you
+                                    like. Our simple drag-and-drop interface
+                                    gives you complete control over how you
+                                    manage your favourite sites.
+                                </p>
+                                <button>More info</button>
+                            </div>
+                        </article>
+                        <article class="article speedy">
+                            <div class="article-img">
+                                <img src="../img/Imagenes/illustration-features-tab-2.svg" alt="" />
+                                <div class="blue-bg secondblue-bg"></div>
+                            </div>
+                            <div class="article-info">
+                                <h3>Intelligent search</h3>
+                                <p>
+                                    Our powerful search feature will help
+                                    you find saved sites in no time at all.
+                                    No need to trawl through all of your
+                                    bookmarks.
+                                </p>
+                                <button>More info</button>
+                            </div>
+                        </article>
+                        <article class="article easy">
+                            <div class="article-img">
+                                <img src="../img/Imagenes/illustration-features-tab-3.svg" alt="" />
+                                <div class="blue-bg secondblue-bg"></div>
+                            </div>
+                            <div class="article-info">
+                                <h3>Share your bookmarks</h3>
+                                <p>
+                                    Easily share your bookmarks and
+                                    collections with others. Create a
+                                    shareable link that you can send at the
+                                    click of a button.
+                                </p>
+                                <button>More info</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section">
+            <div class="third-section-info">
+                <h2>Download the extension</h2>
+                <p>
+                    We've got more browsers in the pipeline. Please do let
+                    us know if you've got a favourite you'd like us to
+                    prioritize.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="../img/Imagenes/logo-chrome.svg" alt="" />
+                    <h3>Add to Chrome</h3>
+                    <p>Minimum version 62</p>
+                    <img src="../img/Imagenes/bg-dots.svg" alt="" />
+                    <button>Add & Install Extension</button>
+                </div>
+                <div class="card">
+                    <img src="../img/Imagenes/logo-firefox.svg" alt="" />
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 55</p>
+                    <img src="../img/Imagenes/bg-dots.svg" alt="" />
+                    <button>Add & Install Extension</button>
+                </div>
+                <div class="card">
+                    <img src="../img/Imagenes/logo-opera.svg" alt="" />
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 46</p>
+                    <img src="../img/Imagenes/bg-dots.svg" alt="" />
+                    <button>Add & Install Extension</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourth-section">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Here are some of our FAQs. If you have any other questions
+                you'd like answered please feel free to email us.
+            </p>
+            <ul class="questions">
+                <li>
+                    <input type="checkbox" id="first-q" />
+                    <label for="first-q">
+                        <h3>What is Bookmark?</h3>
+                        <img src="../img/Imagenes/icon-arrow.svg" alt="" />
+                    </label>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis accusantium eaque alias ipsum mollitia
+                        pariatur, vitae repellat soluta tempora voluptate!
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="second-q" />
+                    <label for="second-q">
+                        <h3>How can I request a new browser?</h3>
+                        <img src="../img/Imagenes/icon-arrow.svg" alt="" />
+                    </label>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis accusantium eaque alias ipsum mollitia
+                        pariatur, vitae repellat soluta tempora voluptate!
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="third-q" />
+                    <label for="third-q">
+                        <h3>Is there a mobile app?</h3>
+                        <img src="../img/Imagenes/icon-arrow.svg" alt="" />
+                    </label>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis accusantium eaque alias ipsum mollitia
+                        pariatur, vitae repellat soluta tempora voluptate!
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="fourth-q" />
+                    <label for="fourth-q">
+                        <h3>What about other Chromium browsers?</h3>
+                        <img src="../img/Imagenes/icon-arrow.svg" alt="" />
+                    </label>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis accusantium eaque alias ipsum mollitia
+                        pariatur, vitae repellat soluta tempora voluptate!
+                    </p>
+                </li>
+            </ul>
+            <button>More info</button>
+        </section>
+
+        <section class="fifth-section">
+            <p>35.000+ ALREADY JOINED</p>
+            <h2>Stay up-to-date with what we're doing</h2>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                <button type="submit">Contact Us</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <div class="recorte">
+                <img src="../img/Imagenes/logo-bookmark.svg" alt="Logo de Bookmark" />
+            </div>
+            <a href="#">BOOKMARK</a>
+        </div>
+        <ul>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="icons">
+            <img src="../img/Imagenes/icon-facebook.svg" alt="Facebook" />
+            <img src="../img/Imagenes/icon-twitter.svg" alt="Twitter" />
+        </div>
+    </footer>
 </body>
+
 </html>
