@@ -7,7 +7,7 @@ h2 {
   font-size: 55px;
   font-weight: 500;
   font-style: normal;
-  color: #222844;
+  color: #1c2138;
 }
 
 p {
@@ -15,16 +15,16 @@ p {
   font-size: 20px;
   font-weight: 350;
   font-style: normal;
-  color: #8a8d9c;
+  color: #848692;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #222844;
+  color: #1c223a;
 }
 
 ul {
   list-style: none;
-}/*# sourceMappingURL=typographt.css.map */
+}
