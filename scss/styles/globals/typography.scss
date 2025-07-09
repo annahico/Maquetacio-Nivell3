@@ -3,30 +3,26 @@
 html {
     font-family: "Rubik", sans-serif;
 }
-
 h2 {
     margin-top: 0;
     font-size: 55px;
     font-weight: 500;
     font-style: normal;
-    color: colors.$color-headlines;
+    color: colours.$color-headlines;
 }
-
 p {
     margin-top: 0;
     font-size: 20px;
     font-weight: 350;
     font-style: normal;
-    color: colors.$color-textParagraph;
+    color: colours.$color-textParagraph;
 }
-
 a,
 a:visited,
 a:active {
     text-decoration: none;
-    color: colors.$color-headlines;
+    color: colours.$color-headlines;
 }
-
 ul {
     list-style: none;
 }

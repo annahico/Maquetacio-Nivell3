@@ -7,7 +7,7 @@ h2 {
   font-size: 55px;
   font-weight: 500;
   font-style: normal;
-  color: #1c2138;
+  color: #222844;
 }
 
 p {
@@ -15,16 +15,16 @@ p {
   font-size: 20px;
   font-weight: 350;
   font-style: normal;
-  color: #848692;
+  color: #8a8d9c;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #1c223a;
+  color: #222844;
 }
 
 ul {
   list-style: none;
-}
+}/*# sourceMappingURL=typography.css.map */
