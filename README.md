@@ -4,13 +4,6 @@
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](https://sass-lang.com/)
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-
-Un projecte de desenvolupament web en tres fases: **vanilla (HTML + CSS)**, **SASS**, i **Tailwind**.
-
-Primer proyecto de desarrollo web en tres fases: **vanilla (HTML + CSS)**, **SASS** y **Tailwind**.
-
-A web development project in three phases: **vanilla (HTML + CSS)**, **SASS**, and **Tailwind**.
-
 ---
 
 ## 📌 Descripció / Descripción / Description
