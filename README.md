@@ -69,18 +69,18 @@ _(SASS i Tailwind apreses des de zero! / ¡SASS y Tailwind aprendidas desde cero
    ▸ tailwind/   (amb framework Tailwind CSS/con framework Tailwind CSS/with Tailwind CSS framework)
 
 4. Executa el projecte / Ejecuta el proyecto / Run the project:
-   # Linux/MacOS
+   #### Linux/MacOS
    open vanilla/index.html
-   # Windows
+   #### Windows
    start vanilla/index.html
 
  ##  🛠 Comandos / Comandos / Commands
 
-# Per compilar SASS / Para compilar SASS / To compile SASS
+ #### Per compilar SASS / Para compilar SASS / To compile SASS
 cd SASS/
 sass --watch styles.scss style.css
 
-# Per executar Tailwind / Para ejecutar Tailwind / To run Tailwind
+#### Per executar Tailwind / Para ejecutar Tailwind / To run Tailwind
 cd tailwind/
 npx tailwindcss -i input.css -o output.css --watch
 
@@ -96,8 +96,7 @@ English: Developed by annahico
 
 ## 🤝 Contribucions / Contribuciones / Contributions
 
-Català:
-Totes les contribucions són benvingudes! Si voleu millorar el projecte:
+#### Totes les contribucions són benvingudes! Si voleu millorar el projecte:
 
 1. Feu un fork del repositori
 2. Creeu una branca (git checkout -b feature/nova-funció)
@@ -105,8 +104,7 @@ Totes les contribucions són benvingudes! Si voleu millorar el projecte:
 4. Feu push a la branca (git push origin feature/nova-funció)
 5. Obriu un Pull Request
 
-Castellano:
-¡Todas las contribuciones son bienvenidas! Si quieres mejorar el proyecto:
+#### ¡Todas las contribuciones son bienvenidas! Si quieres mejorar el proyecto:
 
 1. Haz fork del repositorio
 2. Crea una rama (git checkout -b feature/nueva-funcionalidad)
@@ -114,8 +112,7 @@ Castellano:
 4. Haz push a la rama (git push origin feature/nueva-funcionalidad)
 5. Abre un Pull Request
 
-English:
-All contributions are welcome! If you want to improve the project:
+#### All contributions are welcome! If you want to improve the project:
 
 1. Fork the repository
 2. Create a branch (git checkout -b feature/new-feature)
